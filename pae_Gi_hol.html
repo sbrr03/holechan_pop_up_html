@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홀첸 폐지창 오픈기 v.001</title>
+<script>
+window.onload = function() {
+    // 페이지 로드 후 3초 뒤 팝업 열기
+    setTimeout(function() {
+        openMultiplePopups();
+    }, 5000);
+
+    // 카운트다운 시작
+    var count = 4; // 초기 카운트 값
+
+    var countdown = setInterval(function() {
+        // 카운트 값 출력
+        document.getElementById('countdown').innerText = count;
+
+        // 카운트 다운
+        if (count > 0) {
+            count--;
+        } else {
+            // 카운트 종료
+            clearInterval(countdown);
+        }
+    }, 1000);
+};
+
+function openMultiplePopups() {
+    // 여러 개의 팝업 창 열기
+    window.open('https://showdang.kr/attend/stamp.html', '_blank');
+    window.open('https://oname.kr/attend/stamp.html', '_blank');
+    window.open('https://domaedoll.com/index.html', '_blank');
+    window.open('https://www.dingdong.co.kr/attend/stamp.html', '_blank');
+    window.open('https://www.bananamall.co.kr/etc/attendance.php', '_blank');
+}
+</script>
+</head>
+<body>
+<h1 align="center"> 폐지 창 오픈 중입니다...</h1>
+<br>
+<br>
+<h1 align="center" style="color:#8B0000;"><b><div id="countdown"></div></b></h1>
+<br>
+<h3 align="center"> - 팝업 차단 여부 확인해주세요 - </h3>
+</body>
+</html>
